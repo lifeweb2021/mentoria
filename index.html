@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentoria</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="page">
+        <header>
+            <h1>MENTORIA</h1>
+            <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+        </header>
+        <form id="my-form">
+            <div id="fieldset-wrapper">
+                <fieldset>
+                    <legend>INFORMAÇÕES PESSOAIS</legend>
+                </fieldset>        
+                <div class="col-2">
+                    <div id="input-wrapper">
+                        <label for="nome">Nome</label>
+                        <input type="text" required name="nome" id="nome" >
+                    </div>                
+
+                    <div id="input-wrapper">
+                        <label for="Sobrenome">Sobrenome</label>
+                        <input type="text" name="Sobrenome" id="Sobrenome">
+                    </div>
+                </div>
+
+                <div id="input-wrapper">
+                    <label for="email">Email<span>(digite um e-mail válido)</span></label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div id="input-wrapper">
+                    <label for="senha">Senha<span>(mínimo 6 caracteres)</span></label>
+                    <input type="password" name="senha" minlength="6" required id="senha">
+                </div>
+            </div>
+
+            <div id="fieldset-wrapper">
+                <fieldset>
+                    <legend>INFORMAÇÕES DO MENTOR</legend>
+                </fieldset>        
+                <div id="input-wrapper">
+                    <label for="nomeMentor">Nome do seu mentor<span>(só o primeiro nome)</span></label>
+                    <input type="text" name="nomeMentor" id="nomeMentor">
+                </div>
+            </div>
+
+            <div id="fieldset-wrapper">
+                <fieldset>
+                    <legend>Seus horários disponíveis</legend>
+                </fieldset>  
+                <h2>Primeira Mentoria</h2>                     
+                <div class="col-3">                   
+                    <div id="input-wrapper">                        
+                        <label for="data1">Data 1<span>(dd/mm/aaaa)</span></label>
+                        <input type="date" name="data1" id="data1">
+                    </div>                
+
+                    <div id="input-wrapper">
+                        <label for="hrinicio1p">Hora início</label>
+                        <input type="time" name="hrinicio1p" id="hrinicio1p">
+                    </div>
+
+                    <div id="input-wrapper">
+                        <label for="hrfim1p">Hora fim</label>
+                        <input type="time" name="hrfim1p" id="hrfim1p">
+                    </div>
+                </div>
+
+                <h2>Primeira Mentoria</h2>                     
+                <div class="col-3">                   
+                    <div id="input-wrapper">                        
+                        <label for="data2">Data 1<span>(dd/mm/aaaa)</span></label>
+                        <input type="date" name="data2" id="data2">
+                    </div>                
+
+                    <div id="input-wrapper">
+                        <label for="hrinicio2p">Hora início</label>
+                        <input type="time" name="hrinicio2p" id="hrinicio2p">
+                    </div>
+
+                    <div id="input-wrapper">
+                        <label for="hrfim2p">Hora fim</label>
+                        <input type="time" name="hrfim2p" id="hrfim2p">
+                    </div>
+                </div>
+            </div>            
+        </form>
+    </div>
+    <footer>
+        <button class="btn" form="my-form">SALVAR</button>
+    </footer>
+</body>
+</html>
